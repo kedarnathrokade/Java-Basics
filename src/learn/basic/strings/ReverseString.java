@@ -9,10 +9,10 @@ public class ReverseString {
 	
 	public static void main(String[] args) {
 		
-		String s= "Samarth";
+		String s= "Samarth"; 
 		
-		String rev = "";
-		char ch;
+		String rev = ""; // this variable stores reverse string 
+		char ch;		// used to store the each charater by charater 
 		
 		for(int i =0; i<s.length(); i++) {
 				
