@@ -20,6 +20,8 @@ public class sumofno {
 		//System.out.println("Sum of no is : "+sum);
 
 		System.out.println("Sum is : "+s.sum(no));
+
+			sc.close();
 	}
 	
 	public int sum(int no)
@@ -33,5 +35,6 @@ public class sumofno {
 		
 		return no;
 	}
+
 
 }
