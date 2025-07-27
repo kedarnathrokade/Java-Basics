@@ -29,6 +29,8 @@ public class HollowPattern {
 			
 			System.out.println("");
 		}
+
+		sc.close();
 	}
 
 }

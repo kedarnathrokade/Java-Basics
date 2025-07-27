@@ -1,7 +1,5 @@
 package learn.basic.strings;
 
-import java.io.*;
-import java.util.Scanner;
 
 
 public class ReverseString {
