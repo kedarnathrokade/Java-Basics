@@ -1,5 +1,7 @@
 package learn.basic.strings;
 
+//Using str.split() method 
+
 public class StringtoStringArray {
 	
 	public static void main(String[] args) {
@@ -19,7 +21,7 @@ public class StringtoStringArray {
 		
 	}
 	
-	System.out.println("],");
+	System.out.println("]");
 	
 	}
 
