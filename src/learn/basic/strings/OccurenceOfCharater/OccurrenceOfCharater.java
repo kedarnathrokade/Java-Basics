@@ -12,21 +12,21 @@ public class OccurrenceOfCharater {
 		
 		String s = "Hello World";
 		
-		s = s.replaceAll("\\s+", "");
+		s = s.replaceAll("\\s+", ""); 	// Removing all the spaces
 		
-		Map<Character, Integer> count = new HashMap<>(); 
+		Map<Character, Integer> count = new HashMap<>();    
 		
 		for(char c: s.toCharArray()) {
 			
-			c = Character.toLowerCase(c);
+			c = Character.toLowerCase(c); // converting to lower case 
 			
-			count.put(c, count.getOrDefault(c, 0)+1);
+			count.put(c, count.getOrDefault(c, 0)+1); //
 		}
 		
 		System.out.println("Count of charaters :");
 		for(Map.Entry<Character, Integer> entry : count.entrySet()) {
 			
-			System.out.println(""+entry.getKey()+":"+entry.getValue());
+			System.out.println(""+entry.getKey()+":"+entry.getValue()); // Printing the occurences of charaters
 		}
 		
 		
