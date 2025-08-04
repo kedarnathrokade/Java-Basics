@@ -27,7 +27,7 @@ public class OccurrenceOfCharater {
 		System.out.println("Count of charaters :");
 		for(Map.Entry<Character, Integer> entry : count.entrySet()) {
 			
-			System.out.println(""+entry.getKey()+":"+entry.getValue()); // Printing the occurences of characters
+			System.out.println(""+entry.getKey()+":"+entry.getValue()); // Printing the occurrences of characters
 		}
 		
 		
