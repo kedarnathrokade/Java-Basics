@@ -3,7 +3,7 @@ package learn.basic.strings.OccurenceOfCharater;
 public class OccurrenceOfCharacterUsingArray {
 
     public static void main(String[] args) {
-        String s = "Hello World";
+        String s = "Kedarnath";
 
         s = s.replaceAll("\\s+", ""); // Removing all the spaces
 
