@@ -2,7 +2,8 @@ package learn.basic.strings.OccurenceOfCharater;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
+// Occurrence of Character in a String
+
 
 // Using the Map
 
@@ -26,7 +27,7 @@ public class OccurrenceOfCharater {
 		System.out.println("Count of charaters :");
 		for(Map.Entry<Character, Integer> entry : count.entrySet()) {
 			
-			System.out.println(""+entry.getKey()+":"+entry.getValue()); // Printing the occurences of charaters
+			System.out.println(""+entry.getKey()+":"+entry.getValue()); // Printing the occurences of characters
 		}
 		
 		
