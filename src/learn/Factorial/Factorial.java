@@ -6,6 +6,7 @@ public class Factorial {
 	
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
+		System.out.println("Enter the number to calculate the factorial: ");
 		int no= sc.nextInt();
 		int result= fact(no);
 		System.out.println("Factorial of "+no+" is "+result);
