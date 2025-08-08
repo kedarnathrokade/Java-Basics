@@ -1,4 +1,4 @@
-package learn.basic.strings.OccurenceOfCharater;
+package learn.strings.OccurenceOfCharater;
 import java.util.Map;
 import java.util.TreeMap;
 public class OccurrenceOfCharacterUsingTreeMap {

@@ -1,4 +1,4 @@
-package learn.basic.LearnLinkedList;
+package learn.LearnLinkedList;
 
 import java.util.LinkedList;
 

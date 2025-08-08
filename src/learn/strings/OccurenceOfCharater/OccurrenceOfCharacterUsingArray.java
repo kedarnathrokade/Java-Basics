@@ -1,4 +1,4 @@
-package learn.basic.strings.OccurenceOfCharater;
+package learn.strings.OccurenceOfCharater;
 
 public class OccurrenceOfCharacterUsingArray {
 
