@@ -1,4 +1,4 @@
-package learn.basic.EnnovateSolutions;
+package learn.EnnovateSolutionsPrograms;
 
 public class MaxSecondNoInArray {
 	
