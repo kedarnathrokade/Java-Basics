@@ -1,4 +1,4 @@
-package learn.basic.Factorial;
+package learn.Factorial;
 
 import java.util.Scanner;
 
