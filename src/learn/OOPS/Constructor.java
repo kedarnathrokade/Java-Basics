@@ -5,9 +5,9 @@ public class Constructor {
 	public static void main(String[] args) {
 		
 		Complex  c1 = new Complex(3,2);
-		
+		Complex  c2 = new Complex(13,2);
 		c1.print();
-		
+		c2.print();
 		
 	}
 }
