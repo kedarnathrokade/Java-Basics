@@ -23,6 +23,7 @@ public class LearnHashmap {
 		System.out.println(m.entrySet());
 		System.out.println(m.hashCode());
 		
+		
 	}
 
 }
