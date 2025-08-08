@@ -1,4 +1,4 @@
-package learn.basic.Google;
+package learn.GooglePrograms;
 
 public class twoSum {
 	
