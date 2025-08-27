@@ -10,7 +10,11 @@ public class SecondHighestSal {
 		
 		List<Integer> sal = Arrays.asList(1,2,3,4,5);
 		
-	Optional<Integer> optional =sal.stream().distinct().sorted((a,b)-> b-a).skip(1).findFirst();
+	Optional<Integer> optional = sal.stream()
+			.distinct()
+			.sorted((a,b)-> b-a)
+			.skip(1).
+			findFirst();
 		
 	Integer secondhighest = optional.get();
 	

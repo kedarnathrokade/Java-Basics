@@ -12,11 +12,11 @@ public class ReverseString {
 		String rev = ""; // this variable stores reverse string 
 		char ch;		// used to store the each charater by charater 
 		
-		for(int i =0; i<s.length(); i++) {
+		for(int i =s.length()-1; i>=0; i--) {
 				
 			ch = s.charAt(i);
 			
-			rev = ch + rev;
+			rev = rev + ch;
 			
 			
 		}
