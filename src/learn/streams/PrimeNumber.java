@@ -14,7 +14,7 @@ public class PrimeNumber {
 		
 		for(int i = 2; i<=Math.sqrt(number); i++) {
 			
-			if(i %2 == 0)
+			if(number % i == 0)
 			{
 				return false;
 			}
