@@ -14,6 +14,8 @@ public class MergeList {
 		List<Integer> mergeList = Stream.concat(list1.stream(), list2.stream())
 									.sorted()
 									.collect(Collectors.toList());
+		
+		
 		System.out.println("List1 elements : "+ list1);
 		System.out.println("List2 elements : "+list2);
 		System.out.println("Merged List: "+mergeList);
