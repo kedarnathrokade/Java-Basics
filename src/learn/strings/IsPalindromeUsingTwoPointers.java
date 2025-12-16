@@ -13,7 +13,7 @@ public class IsPalindromeUsingTwoPointers {
 				return false;
 			}
 				i++;
-				j--;
+				j--;	
 			}
 				
 		

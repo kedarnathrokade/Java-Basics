@@ -11,7 +11,7 @@ public class LearnHashmap {
 		
 		m.put(null, "asd");
 		m.put("asd", "SS");
-		m.put(null, "a");
+		m.put(null, "a"); // We cannot store multiple null values in hashmap it will overwrite the existing value
 		
 		System.out.println(m);
 		
