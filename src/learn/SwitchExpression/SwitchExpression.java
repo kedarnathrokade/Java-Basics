@@ -9,9 +9,9 @@ public class SwitchExpression {
 		
 	 result = switch(day){
 		
-		case "Monday", "Tuesday": yield "6AM";
-		case "Sunday" : yield "7AM";
-		default : yield "6:30AM";
+		case "Monday", "Tuesday" -> "6AM";
+		case "Sunday" -> "7AM";
+		default -> "6:30AM";
 			
 			
 		};
