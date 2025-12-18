@@ -11,7 +11,7 @@ public class EvenOdd {
 		
 		System.out.println("Even numbers");
 		
-		list.stream().filter(n -> n%2==0).forEach(System.out::println);
+		list.stream().filter(n -> n%2 ==0).forEach(System.out::println);
 		
 		System.out.println("Odd numbers");
 		
