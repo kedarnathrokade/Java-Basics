@@ -1,19 +1,22 @@
 package learn.EnnovateSolutionsPrograms;
 
+import java.util.stream.Collectors;
+
 public class trying {
 	
-	public static void main(String[] args) {
-		
-		for (int i=1; i<=5;i++)
-		{
-			if(i==3)
-				continue;
-			else 
-				System.out.println(i);
-			
+	public static void main(String args[]){
+
+		String str = "programming";
+
+		String result = str.chars().distinct().mapToObj(c -> String.valueOf((char) c)).collect(Collectors.joining());
+
+		System.out.println("Original String:"+str);
+		System.out.println("After removing the duplicates:"+result);
+
 		}
-		
-		
-	}
+
+
+
+
 
 }

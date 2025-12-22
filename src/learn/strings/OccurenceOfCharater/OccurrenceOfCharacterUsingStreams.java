@@ -8,15 +8,21 @@ public class OccurrenceOfCharacterUsingStreams {
 	
 	public static void main(String[] args) {
 		
-		String s = "Java Development".toLowerCase().replaceAll("\\s+", "");
+		String str = "Welcome to india !";
 		
-		Map<Character, Long> result = s.chars()
-				.mapToObj(c -> (char)c)
-				.collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
-		result.forEach((ch,count) -> System.out.println(""+ch+":"+count));
+		Map<Character, Long> result = str.chars().mapToObj(c ->(char)c ).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 		
+		result.forEach((ch,count) ->
+		{
+			System.out.println(ch+" : "+count);
+			
 		
+		});
+	
+
+
 		
+
 		
 		
 
