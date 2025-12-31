@@ -11,7 +11,7 @@ public class LearnEnum {
 		Status s = Status.Running;
 		System.out.println(s);
 		
-		Status ss[] = Status.values();
+		Status ss[] = Status.values();  
 		
 		for(Status s1 : ss) {
 			
