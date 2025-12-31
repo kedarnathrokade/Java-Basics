@@ -20,6 +20,9 @@ abstract class WagonR extends Car{
 		System.out.println("Driving ...");
 		
 	}
+	public void start() {
+		System.out.println("Car starting...");
+	}
 	
 }
 
@@ -27,7 +30,7 @@ class UpdatedWagonR extends WagonR{
 
 	@Override
 	public void start() {
-		System.out.println("Car starting...");
+		System.out.println("Updated WagonR starting...");
 	}
 	
 	
