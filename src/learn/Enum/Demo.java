@@ -6,9 +6,15 @@ enum Laptop{
 	Laptop(){
 		price = 600;
 	}
-	int price;
+	private int price;
 	Laptop(int price){
 		
+		this.price = price;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
 		this.price = price;
 	}
 	
@@ -24,7 +30,7 @@ public class Demo {
 		
 		for(Laptop l : lap) {
 			
-			System.out.println(l+" : "+l.price);
+			System.out.println(l+" : "+l.getPrice());
 		}
 	}
 }
