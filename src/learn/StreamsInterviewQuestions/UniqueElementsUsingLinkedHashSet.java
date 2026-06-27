@@ -1,4 +1,4 @@
-package learn.ImportantInterviewQuestions;
+package learn.StreamsInterviewQuestions;
 
 import java.util.Arrays;
 import java.util.LinkedHashSet;
