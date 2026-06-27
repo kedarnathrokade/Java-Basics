@@ -12,12 +12,7 @@ public class OccurrenceOfCharacterUsingStreams {
 		
 		Map<Character, Long> result = str.chars().mapToObj(c ->(char)c ).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 		
-		result.forEach((ch,count) ->
-		{
-			System.out.println(ch+" : "+count);
-			
-		
-		});
+		result.forEach((ch,count) ->System.out.println(ch+" : "+count));
 	
 
 

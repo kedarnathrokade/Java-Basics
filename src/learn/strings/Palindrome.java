@@ -1,4 +1,4 @@
-package learn.strings;
+ package learn.strings;
 
 public class Palindrome {
 	

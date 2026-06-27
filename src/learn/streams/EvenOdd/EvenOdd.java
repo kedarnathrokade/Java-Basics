@@ -11,8 +11,10 @@ public class EvenOdd {
 		
 		System.out.println("Even numbers");
 		
-		list.stream().filter(n -> n%2 ==0).forEach(System.out::println);
+		List<Integer> even = list.stream().filter(n -> n%2 ==0).toList();
 		
+		System.out.println(even);
+			
 		System.out.println("Odd numbers");
 		
 		list.stream().filter(n -> n%2 !=0).forEach(System.out::println);

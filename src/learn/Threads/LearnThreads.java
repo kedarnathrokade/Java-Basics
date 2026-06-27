@@ -1,88 +1,51 @@
 package learn.Threads;
 
-
-//class A implements Runnable{
-//	
-//	public void run() {
-//		
-//		for(int i =0; i<=5;i++) {
-//		
-//		System.out.println("Hi");
-//		}
-//		
-//		try {
-//			Thread.sleep(500);
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//	}
-//}
+class Counter {
+	
+	int count  = 0;
+	
+	public void increament() {
+		count++;
+	}
+}
 
 
-//class B implements Runnable{
-//	
-//	public void run() {
-//		for(int i =0; i<=5;i++) {
-//		System.out.println("Hello");  }
-//		
-//		try {
-//			Thread.sleep(500);
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//			
-//	}
-//	
-//}
+
 public class LearnThreads {
 	
 	public static void main(String[] args) {
 		
-		Runnable a =  new Runnable()  {
-			public void run() {
-				
-				for(int i =0; i<=5;i++) {
-				
-				System.out.println("Hi");
-				}
-				
-				try {
-					Thread.sleep(500);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			}
+		Counter c = new Counter();
+		Runnable a = () -> {
 			
-		};
-		Runnable b = new Runnable() {
-
-			public void run() {
-				for(int i =0; i<=5;i++) {
-				System.out.println("Hello");  }
 				
-				try {
-					Thread.sleep(500);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
+				for(int i =0; i<=1000;i++) {
+				
+				c.increament();
 				}
-					
-			}
-			
+				
+				
 			
 		};
 		
+		
+		Runnable b = () -> {
+			
+			
+				for(int i =0; i<=1000;i++) {
+					c.increament();
+					}
+		};
+		
 		Thread t1 = new Thread(a);
-		try {
-			Thread.sleep(20);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 		Thread t2 = new Thread(b);
 		
 		
 	
 		t1.start();
 		t2.start();
+		
+		System.out.println(c.count);
 	}
 
 }

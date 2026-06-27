@@ -10,7 +10,7 @@ public class OccurrenceOfCharacterUsingArray {
         int[] count = new int[256]; // Assuming ASCII characters
 
         for (char c : s.toCharArray()) {
-            c = Character.toLowerCase(c); // converting to lower case
+           // c = Character.toLowerCase(c); // converting to lower case
             count[c]++; // Incrementing the count for the character
         }
 
