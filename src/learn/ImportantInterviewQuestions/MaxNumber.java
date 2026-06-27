@@ -1,4 +1,4 @@
-package learn.streams.maxNo;
+package learn.ImportantInterviewQuestions;
 
 import java.util.Arrays;
 import java.util.List;

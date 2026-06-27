@@ -1,4 +1,4 @@
-package learn.printnowithoutloop;
+package learn.basic.programs;
 
 public class PrintNumbers {
 	

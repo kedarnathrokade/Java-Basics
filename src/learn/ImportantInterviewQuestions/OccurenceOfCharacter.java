@@ -5,8 +5,9 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class OccurenceOfCharacter {
-
-
+	
+	// Character counting
+	
 			public static void main(String args[]){
 	
 			String str = "Welcome to India ";
