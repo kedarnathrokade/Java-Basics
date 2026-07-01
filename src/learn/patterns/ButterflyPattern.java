@@ -10,7 +10,7 @@ public class ButterflyPattern {
 		{
 			for(int j = 1; j<=num; j++)
 			{
-				System.out.print("* ");
+				 System.out.print("* ");
 				
 			}
 			
