@@ -15,7 +15,7 @@ public class AccendingDecendingOrderElements {
 		System.out.println("Decending Order using list: ");
 		list.stream().sorted(Collections.reverseOrder()).forEach(System.out::println);
 		
-		// Using Array
+		// Using Array or We can convert in to List using boxed() method
 		int[] arr = { 20,50,1,3,6,100};
 		System.out.println("Accending Order using Array: ");
 		Arrays.stream(arr).sorted().forEach(System.out::println);
