@@ -29,6 +29,8 @@ public class MoveZerosToLeft {
 		ans.addAll(nonZeros);
 		System.out.println("Using method 2 : "+ans);
 		
+		// Method 3 : 
+		
 	}
 
 }
