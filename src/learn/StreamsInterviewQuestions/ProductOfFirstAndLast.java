@@ -14,6 +14,12 @@ public class ProductOfFirstAndLast {
 		IntStream.range(0, arr.length/2).map(x -> arr[x]*arr[arr.length-x-1])
 				 .forEach(System.out::println); // Using IntStream
 		
+		int[] result = IntStream.range(0, arr.length/2)
+			.map(x -> arr[x]*arr[arr.length-x-1])
+			.toArray();
+		
+		System.out.println("Using array : "+Arrays.toString(result));
+		
 		
 		 
 	}
