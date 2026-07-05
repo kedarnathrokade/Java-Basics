@@ -28,6 +28,14 @@ public class MoveZerosToRight {
 		
 		System.out.println("Using Solution 2 : "+ans);
 		
+		// Solution 3 : Using partitioningBy
+		
+		List<Integer> ans2 = list.stream()
+				.collect(Collectors.partitioningBy(x-> x==0))
+				.values().stream().flatMap(x->x.stream()).toList();
+		
+		System.out.println("Using partitioningBy: "+ans2);
+		
 	}
 
 }
