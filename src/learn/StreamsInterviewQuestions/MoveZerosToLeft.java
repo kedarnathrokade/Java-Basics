@@ -2,7 +2,9 @@ package learn.StreamsInterviewQuestions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -29,7 +31,13 @@ public class MoveZerosToLeft {
 		ans.addAll(nonZeros);
 		System.out.println("Using method 2 : "+ans);
 		
-		// Method 3 : 
+		// Method 3 : Using partitioningBy and flatMap
+		
+		 List<Integer> result1 = list.stream()
+				.collect(Collectors.partitioningBy(x -> x!=0)).values()
+				.stream().flatMap(x -> x.stream()).toList();
+		
+		System.out.println("Using PartitioningBy : "+result1);
 		
 	}
 
