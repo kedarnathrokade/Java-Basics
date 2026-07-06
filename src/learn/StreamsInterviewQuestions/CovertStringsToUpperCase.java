@@ -15,7 +15,7 @@ public class CovertStringsToUpperCase {
 		
 		List<String> result2 = list.stream()
 				.map(String::toUpperCase)
-				.collect(Collectors.toList());
+				.collect(Collectors.toList()); // Solution 2
 		
 		System.out.println("Using lambda fuction : "+result);
 		System.out.println("Using method reference: "+result2);
