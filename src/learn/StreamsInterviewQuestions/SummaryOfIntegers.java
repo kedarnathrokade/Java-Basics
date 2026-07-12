@@ -9,11 +9,11 @@ public class SummaryOfIntegers {
 	
 	public static void main(String[] args) {
 		
-		int arr[]={4,1,2,5,7,22};
+	
 		
 		List<Integer> numbers = Arrays.asList(10, 20, 30, 40, 50);
 
-        IntSummaryStatistics stats = numbers.stream()
+        IntSummaryStatistics stats = numbers.stream().
                 .collect(Collectors.summarizingInt(Integer::intValue));
 
         System.out.println("Count   : " + stats.getCount());
