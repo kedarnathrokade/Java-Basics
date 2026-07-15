@@ -23,6 +23,18 @@ List<Employee>  employees = List.of(
 	System.out.println(result);
 	
 	
+	record EmployeeDTO(String name, String department) {} // Java  16+
+	
+	Map<String, List<EmployeeDTO>> result1 = Employee.getEmployees().stream()
+	        .collect(Collectors.groupingBy(
+	                Employee::getCity,
+	                Collectors.mapping(
+	                        e -> new EmployeeDTO(e.getName(), e.getDepartment()),
+	                        Collectors.toList())));
+	
+	System.out.println(result1);
+	
+	
 	}
 
 }
