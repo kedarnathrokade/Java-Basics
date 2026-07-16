@@ -2,11 +2,8 @@ package learn.StreamCollectionPrograms;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
-import java.util.function.BinaryOperator;
-import java.util.stream.Collectors;
 
-public class HighestSalaryAmongDuplicates {
+public class HighestSalary {
 	
 	public static void main(String[] args) {
 		
@@ -18,10 +15,11 @@ public class HighestSalaryAmongDuplicates {
 				new Employee(4, "Lucy", "Finance", "Pune", 50000)
 				);
 		
-		Map<Integer, Employee> HighetSalaryAmongDuplicates = employees.stream()
-				.collect(Collectors.toMap(Employee::getId, e-> e, BinaryOperator.maxBy(Comparator.comparing(Employee::getSalary))));
+		Employee highestSalary = employees.stream()
+				.max(Comparator.comparing(Employee::getSalary))
+				.orElse(null);
 		
-		System.out.println(HighetSalaryAmongDuplicates);	
+		System.out.println(highestSalary);
 		
 	}
 
