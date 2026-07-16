@@ -22,7 +22,10 @@ public class ConvertListOfEmployeesIntoMap {
 		System.out.println("With Duplicates and updating old values: "+ListToMapWithOldDuplicates);
 		
 		
+		Map<Integer, Employee> ListToMapWithLatestUpdatedDuplicates = Employee.getEmployees().stream()
+				.collect(Collectors.toMap(Employee::getId, e-> e, (oldValue, newValue) -> newValue)); // Keeps updated values
 		
+		System.out.println("Latest updated values for duplicates : "+ ListToMapWithLatestUpdatedDuplicates);
 
 	}
 
