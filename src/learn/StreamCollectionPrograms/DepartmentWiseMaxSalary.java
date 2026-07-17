@@ -18,9 +18,15 @@ class DepartmentWiseMaxSalary {
 				);
 	
 	Map<String, Optional<Employee>> maxDeptSalary = employees.stream()
-			.collect(Collectors.groupingBy(Employee::getDepartment, Collectors.maxBy(Comparator.comparing(Employee::getSalary))));
+			.collect(Collectors.groupingBy(Employee::getDepartment, Collectors.maxBy(Comparator.comparing(Employee::getSalary)))); // With Optional
 	
 	System.out.println(maxDeptSalary);
+	
+	Map<String, Employee> maxDeptSalaryWithoutOptional = employees.stream()
+			.collect(Collectors.groupingBy(Employee::getDepartment, Collectors.collectingAndThen
+					(Collectors.maxBy(Comparator.comparing(Employee::getSalary)),Optional::get)));
+	
+	System.out.println(maxDeptSalaryWithoutOptional);
 	
 	
 	}
