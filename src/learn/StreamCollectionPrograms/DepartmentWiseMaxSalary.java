@@ -26,7 +26,7 @@ class DepartmentWiseMaxSalary {
 			.collect(Collectors.groupingBy(Employee::getDepartment, Collectors.collectingAndThen
 					(Collectors.maxBy(Comparator.comparing(Employee::getSalary)),Optional::get)));
 	
-	System.out.println(maxDeptSalaryWithoutOptional);
+	System.out.println(maxDeptSalaryWithoutOptional); 
 	
 	
 	}
